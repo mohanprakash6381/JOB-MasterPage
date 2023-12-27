@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JSPMaster.master.cs" Inherits="JOB_MasterPage.JSPMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 197px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table border="1" width=100%>
+            <tr><td width=15% class="auto-style1"><center><asp:Image ID="Image1" runat="server" ImageUrl="~/Image/th.jpeg" Height="200px" /></td><td colspan="5" class="auto-style1"><center>
+                <asp:Panel ID="Panel2" runat="server" BackColor="#00CCFF" Height="192px" Width="1200px">
+                    <br />
+                    <asp:Image ID="Image2" runat="server" Height="155px" ImageUrl="~/Image/OIP (4).jpeg" Width="1000px" />
+                    <br />
+                    <br />
+                </asp:Panel>
+                </td></tr>
+            <tr><td width=15%><center><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MHome.aspx">Home</asp:HyperLink></td>
+            <td width=15%><center><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/JOB Seeker Login.aspx">JOB Seeker</asp:HyperLink></td>
+            <td width=15%><center><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Company Login .aspx">Company</asp:HyperLink></td>
+            <td width=15%><center><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin Login.aspx">Admin</asp:HyperLink></td>
+            <td width=15%><center><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Feed Back.aspx">Feed Back</asp:HyperLink></td>
+            <td width=15%><center><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Contact Us.aspx">Contact us</asp:HyperLink></td></tr>
+
+
+            <tr><td colspan="6">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:Panel ID="Panel1" runat="server" BackColor="White" Height="550px">
+                </asp:Panel>
+            </asp:ContentPlaceHolder> 
+            </td></tr>
+
+            <tr><td colspan="6"><center><asp:Label ID="Label2" runat="server" Text="Copyright @ JOB Portal Alrights Reserved." Font-Bold="True" Font-Italic="True" Font-Size="Small" ForeColor="#000099" BorderColor="#66FFFF"></asp:Label> </td></tr>
+
+            </table>
+        </div> 
+
+    </form> 
+</body>
+</html> 

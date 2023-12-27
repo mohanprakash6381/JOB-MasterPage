@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="COMPANY MASTER PAGE.master.cs" Inherits="JOB_MasterPage.COMPANY_MASTER_PAGE" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table border="1" witdh=100%> 
+                <tr><td width=15%><asp:Image ID="Image1" runat="server" ImageUrl="~/Image/th.jpeg" /></td><td><center>
+ <asp:Panel ID="Panel2" runat="server" BackColor="#00CCFF" Height="192px" Width="1200px">
+                    <br />
+                    <asp:Image ID="Image2" runat="server" Height="155px" ImageUrl="~/Image/OIP (4).jpeg" Width="1000px" />
+                    <br />
+                    <br />
+                </asp:Panel>
+                </td></tr>           <tr><td><asp:HyperLink ID="HyperLink1" runat="server">Welcome</asp:HyperLink></td><td rowspan="8">
+               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           </td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/C Post New Job.aspx">Post New Job</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/c My Posted Job.aspx">My posted Job</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/C My Account.aspx">My Account</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/C Profile Matche.aspx">Profile Matche</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/C Applied Jop.aspx">Applied Job</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/C Change Password.aspx">Change Password</asp:HyperLink></td></tr>
+           <tr><td><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/C Log Out.aspx">LogOut</asp:HyperLink></td></tr>
+
+                <tr><td colspan="8"><center><asp:Label ID="Label2" runat="server" Text="Copyright @ JOB Portal Alrights Reserved." ForeColor="#000099"></asp:Label></td></tr>
+                </table>
+        </div>
+    </form>
+</body>
+</html>
